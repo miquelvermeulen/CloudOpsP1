@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AXA Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap-timepicker.min.css" rel="stylesheet">
+    <style type="text/css">
+    /* overrides backbone */
+    .navbar-inner {
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background:url(img/navbar-background.png) repeat-x !important;
+      background-size: 11px !important;
+
+    }
+    .navbar .nav > li > a {
+      color: white;
+    }
+    .brand img {
+      margin-top: 10px;
+      margin-bottom: 6px;
+      margin-left: 40px;
+    }
+    .results {
+      display:none;
+    }
+    .quotation-submit {
+      margin-left: 170px;
+    }
+    .quotation-download {
+      text-align: right;
+    }
+    .quotation-result-actions {
+      text-align: right;
+    }
+    .time-bloc {
+      width: 135px;
+      display: inline-block;
+    }
+    .between {
+      vertical-align: top;
+      line-height: 26px;
+    }
+    </style>
+
+    <!-- using require js -->
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
+  </head>
+  <body>
+    <div>
+      <a class="brand" href="#"><img src="img/logo.png"></a>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#quotation">Quotation</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="content container-fluid">
+          <div id="page" class="span7">
+            Loading...
+          </div>
+          <footer>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+    window.APP= {};
+    window.APP.state= "";
+    </script>
+  </body>
+</html>

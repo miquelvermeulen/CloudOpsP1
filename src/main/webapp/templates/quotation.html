@@ -1,0 +1,79 @@
+
+<h2>Quotation</h2>
+<div class="quotation">
+  <form class="form-horizontal">
+    <div class="control-group">
+      <label class="control-label" for="inputMake">Make (*)</label>
+      <div class="controls">
+        <select id="inputMake" name="inputMake" class="span4">
+          <option value="FORD" data-ratio="0.8">FORD</option>
+          <option value="DATSUN" data-ratio="1">DATSUN</option>
+          <option value="ROVER" data-ratio="1.2">ROVER</option>
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputModel">Model (*)</label>
+      <div class="controls">
+        <select id="inputModel" name="inputModel" class="span4">
+          <% _.each(data.get("modelsList"), function(model){ %>
+            <option value="<%= model.name %>" class="<%= model.make %>" data-make-value="<%= model.makeValue %>" data-value="<%= model.value %>"><%= model.name %></option>
+          <% }); %>
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputInsurance">Insurance type (*)</label>
+      <div class="controls">
+        <select id="inputInsurance" name="inputInsurance" class="span4">
+          <% _.each(data.get("insuranceList"), function(insurance){ %>
+            <option value="<%= insurance.name %>" data-ratio="<%= insurance.value %>"><%= insurance.name %></option>
+          <% }); %>
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputSituation">Your situation (*)</label>
+      <div class="controls">
+        <select id="inputSituation" name="inputSituation" class="span4">
+          <% _.each(data.get("situationList"), function(situation){ %>
+            <option value="<%= situation.name %>" data-ratio="<%= situation.value %>"><%= situation.name %></option>
+          <% }); %>
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <label class="checkbox">
+        </label>
+        <a id="quotation-cancel" href="#" class="btn">Cancel</a>
+        <a id="quotation-submit" href="#" class="btn btn-primary quotation-submit">Submit</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="results">
+  <span class="quotation-result">
+  <p>You requested a quotation for the following criterias:</p>
+    <div class="well">
+      <p>Make: <span id="makeSelected">Datsun</span></p>
+      <p>Model: <span id="modelSelected">Bluebird</span></p>
+      <p>Insurance type: <span id="insuranceSelected">Comprehensive insurance</span></p>
+      <p>Your situation: <span id="situationSelected">Drive less than 8000 km per year</span></p>
+    </div>
+    <p>Indicative quotation for 1 year insurance premium:</p>
+    <div class="well">
+      <p>USD <span id="resultValue">800</span> (indicative quotation without contractual value)</p>
+    </div>
+  </span>
+  <p class="quotation-download"><a href="#">Download your quotation</a></p>
+  <form>
+    <div class="control-group">
+      <div class="controls quotation-result-actions">
+        <a href="#quotation" id="quotation-new" class="btn btn-primary">New Quotation</a>
+        <a href="#contact" id="more-info" class="btn btn-primary">Want More Info</a>
+      </div>
+    </div>
+  </form>
+</div>

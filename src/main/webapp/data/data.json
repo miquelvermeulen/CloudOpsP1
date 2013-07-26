@@ -1,0 +1,123 @@
+[{
+  "refPrice": "400",
+  "insuranceList": [
+    {
+      "name": "Third-party insurance",
+      "value": "1.3"
+    },
+    {
+      "name": "Comprehensive insurance",
+      "value": "1.9"
+    }
+  ],
+  "situationList": [
+    {
+      "name": "I have a 50% bonus for more than 6 years",
+      "value": "0.5"
+    },
+    {
+      "name": "Drive less than 8000 km per year",
+      "value": "0.9"
+    },
+    {
+      "name": "I am a teacher",
+      "value": "1.2"
+    },
+    {
+      "name": "Young driver",
+      "value": "2.3"
+    }
+  ],
+  "modelsList": [
+    {
+      "name": "Transit Connect",
+      "value": "0.7",
+      "make": "FORD",
+      "makeValue": "0.8"
+    },
+    {
+      "name": "Tourneo",
+      "value": "0.8",
+      "make": "FORD",
+      "makeValue": "0.8"
+    },
+    {
+      "name": "Taunus",
+      "value": "0.9",
+      "make": "FORD",
+      "makeValue": "0.8"
+    },
+    {
+      "name": "Scorpio",
+      "value": "1",
+      "make": "FORD",
+      "makeValue": "0.8"
+    },
+    {
+      "name": "Galaxy",
+      "value": "1.1",
+      "make": "FORD",
+      "makeValue": "0.8"
+    },
+    {
+      "name": "Violet",
+      "value": "0.8",
+      "make": "DATSUN",
+      "makeValue": "1"
+    },
+    {
+      "name": "Sunny",
+      "value": "0.9",
+      "make": "DATSUN",
+      "makeValue": "1"
+    },
+    {
+      "name": "Stanza",
+      "value": "1",
+      "make": "DATSUN",
+      "makeValue": "1"
+    },
+    {
+      "name": "Patrol",
+      "value": "1.2",
+      "make": "DATSUN",
+      "makeValue": "1"
+    },
+    {
+      "name": "Bluebird",
+      "value": "1.4",
+      "make": "DATSUN",
+      "makeValue": "1"
+    },
+    {
+      "name": "Streetwise",
+      "value": "0.9",
+      "make": "ROVER",
+      "makeValue": "1.2"
+    },
+    {
+      "name": "Freight",
+      "value": "1",
+      "make": "ROVER",
+      "makeValue": "1.2"
+    },
+    {
+      "name": "Estate",
+      "value": "1.2",
+      "make": "ROVER",
+      "makeValue": "1.2"
+    },
+    {
+      "name": "820",
+      "value": "1.4",
+      "make": "ROVER",
+      "makeValue": "1.2"
+    },
+    {
+      "name": "825",
+      "value": "1.7",
+      "make": "ROVER",
+      "makeValue": "1.2"
+    }
+  ]
+}]

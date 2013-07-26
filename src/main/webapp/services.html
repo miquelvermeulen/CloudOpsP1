@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CloudOps Services Catalog</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+    /* overrides backbone */
+    .navbar-inner {
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background:url(img/navbar-background.png) repeat-x !important;
+      background-size: 11px !important;
+
+    }
+    .navbar .nav > li > a {
+      color: white;
+    }
+    .brand img {
+      margin-top: 10px;
+      margin-bottom: 6px;
+    }
+    .results {
+      display:none;
+    }
+    .quotation-submit {
+      margin-left: 90px;
+    }
+    .quotation-download {
+      text-align: right;
+    }
+    .quotation-result-actions {
+      text-align: right;
+    }
+    </style>
+
+    <!-- using require js -->
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
+  </head>
+  <body>
+    <div class="container"><a class="brand" href="#"><img src="img/logo.png"></a></div>
+    <style>
+    * {
+      box-sizing: border-box
+    }
+    .row-text {
+      text-transform: uppercase;
+    }
+    .active {
+      background-color: white;
+    }
+    .inactive {
+      background-color: rgb(230,230,230);
+      color: #333333;
+    }
+    .active, .inactive {
+      padding: 1em;
+    }
+
+    .active, .inactive {
+      border: 1em solid rgb(84, 135, 180);
+    }
+    .zone {
+      background-color: rgb(84, 135, 180);
+    }
+    </style>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <ul class="nav">
+              <li><a href="#">&nbsp;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+      <h2>CloudOps Services Catalog</h2>
+      <br>
+      <div class="row">
+        <div class="span12 row-text">
+              Business Applications
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 zone">
+          <div class="row">
+            <div class="span3 inactive">
+              Marketplaces
+            </div>
+            <div class="span3 inactive">
+              Saas
+            </div>
+            <div class="span3 inactive">
+              Collaboration
+            </div>
+            <div class="span3 inactive">
+              Mobility
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="span9 row-text">
+          Administration, monitoring, billing
+        </div>
+        <div class="span3 row-text">
+          SECURITY services
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="span6 zone">
+          <div class="row">
+            <div class="span3 active">
+              <a href="https://axa-tech.okta.com/home/newrelic/0oa6iy29brLCYNWRCUHK/843">Monitoring</a>
+            </div>
+            <div class="span3 inactive">
+              APIs library
+            </div>
+          </div>
+          <div class="row">
+            <div class="span3 inactive">
+              Billing
+            </div>
+            <div class="span3 inactive">
+              Reporting
+            </div>
+          </div>
+        </div>
+        <div class="span3 zone">
+          <div class="row">
+            <div class="span3 inactive">
+              Professional Services
+            </div>
+          </div>
+        </div>
+        <div class="span3 zone">
+          <div class="row">
+            <div class="span3 inactive">
+              IAM
+            </div>
+            <div class="span3 inactive">
+              Data encryption
+            </div>
+            <div class="span3 inactive">
+              Security reports
+            </div>
+            <div class="span3 inactive">
+              Compliance audits
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br>
+
+      <div class="row" style="margin-top: -140px;">
+        <div class="span12 row-text">
+          Platform Services
+        </div>
+      </div>
+      <div class="row">
+        <div class="span9 zone">
+          <div class="row">
+            <div class="span3 inactive">
+              Database as a Service
+            </div>
+            <div class="span3 inactive">
+              Mobile Services
+            </div>
+            <div class="span3 inactive">
+              Development Support
+            </div>
+          </div>
+          <div class="row">
+            <div class="span3 active">
+              <a href="https://axa-tech.okta.com/home/template_sps/0oa6fn4qwbJYCHSRUBDT/2355">Web Server / Web application server</a>
+            </div>
+            <div class="span3 inactive">
+              Big Data Platform
+            </div>
+            <div class="span3 inactive">
+              EIP, Web Services, ..
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="span12 row-text">
+          Infrastructure Services
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 zone">
+          <div class="row">
+            <div class="span3 inactive">
+              Servers on demand
+            </div>
+            <div class="span3 inactive">
+              Storage &amp; Back-up on demand
+            </div>
+            <div class="span3 inactive">
+              DR as a Service
+            </div>
+            <div class="span3 inactive">
+              Network services
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<!-- 
+    <div class="container-fluid">
+      <div class="content container-fluid">
+        
+      </div>
+    </div>
+ -->
+
+  </body>
+</html>
